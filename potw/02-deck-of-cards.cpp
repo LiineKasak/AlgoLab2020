@@ -4,14 +4,15 @@
 using namespace std;
 
 void solve() {
-  int nr_cards, target; cin >> nr_cards >> target;
+  int nr_cards, target;
+  cin >> nr_cards >> target;
   vector<int> cards(nr_cards);
-  for (int i = 0; i < nr_cards; i++)
-    cin >> cards[i];
-  
-  int best_left = 0, left = 0, best_right = 0, right = -1, sum = 0, best_diff = target, diff; // best left right sum diff
-  
-  while(right < nr_cards) {
+  for (int i = 0; i < nr_cards; i++) cin >> cards[i];
+
+  int best_left = 0, left = 0, best_right = 0, right = -1, sum = 0,
+      best_diff = target, diff;  // best left right sum diff
+
+  while (right < nr_cards) {
     // curr diff
     diff = target - sum;
     if (abs(diff) < best_diff) {
@@ -38,7 +39,8 @@ void solve() {
 
 int main() {
   ios_base::sync_with_stdio(false);
-  int t; cin >> t;
+  int t;
+  cin >> t;
   while (t--) solve();
   return 0;
 }

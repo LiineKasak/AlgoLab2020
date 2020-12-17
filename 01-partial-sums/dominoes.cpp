@@ -4,15 +4,15 @@
 using namespace std;
 
 void solve() {
-  int dominoes_nr; cin >> dominoes_nr;
-  
+  int dominoes_nr;
+  cin >> dominoes_nr;
+
   vector<int> domino_heights(dominoes_nr);
-  for (int i = 0; i < dominoes_nr; i++)
-    cin >> domino_heights[i];
-  
+  for (int i = 0; i < dominoes_nr; i++) cin >> domino_heights[i];
+
   int falling_dominoes = 1;
   int curr, prev = domino_heights[0];
-  
+
   for (int i = 1; i < dominoes_nr; i++) {
     if (prev <= 1) break;
     falling_dominoes++;
@@ -25,7 +25,8 @@ void solve() {
 
 int main() {
   ios_base::sync_with_stdio(false);
-  int t; cin >> t;
+  int t;
+  cin >> t;
   while (t--) solve();
   return 0;
 }
