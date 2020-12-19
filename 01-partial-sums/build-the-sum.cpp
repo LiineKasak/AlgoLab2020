@@ -1,23 +1,25 @@
+/*
+Just sum of addends.
+*/
+
 #include <iostream>
 
 using namespace std;
 
 void solve() {
-  int n, s = 0, t;
-  cin >> n;
-  for (int i = 0; i < n; i++) {
-    cin >> t;
-    s += t;
+  int addends_nr, sum = 0, addend;
+  cin >> addends_nr;
+  for (int i = 0; i < addends_nr; i++) {
+    cin >> addend;
+    sum += addend;
   }
-  cout << s << endl;
+  cout << sum << endl;
 }
 
 int main() {
   ios_base::sync_with_stdio(false);
-
   int t;
   cin >> t;
-  for (int i = 0; i < t; i++) {
-    solve();
-  }
+  while (t--) solve();
+  return 0;
 }

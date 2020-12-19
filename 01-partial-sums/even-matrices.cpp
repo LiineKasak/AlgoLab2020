@@ -1,3 +1,8 @@
+/*
+Reducing the 2D problem to a 1D problem equal to Even Pairs.
+Partial sums of precomputed values.
+*/
+
 #include <iostream>
 #include <vector>
 

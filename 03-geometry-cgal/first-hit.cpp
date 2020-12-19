@@ -1,3 +1,11 @@
+/*
+Finidng the first intersection on a Ray.
+Epec kernel because we need to calculate exact values of intersections.
+
+Tip: When one intersection found, use a new Segment(ray_start, intersection)
+to find new intersections.
+*/
+
 #include <CGAL/Exact_predicates_exact_constructions_kernel.h>
 
 using namespace std;

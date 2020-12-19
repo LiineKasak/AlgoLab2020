@@ -1,3 +1,8 @@
+/*
+Finding if a ray intersects with any segments.
+Epic is okay since we don't need to calculate the value of the intersection.
+*/
+
 #include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
 
 using namespace std;

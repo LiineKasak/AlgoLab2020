@@ -1,3 +1,8 @@
+/*
+Sliding window over words in a text to find the shortest possible
+snippet length containing all required words.
+*/
+
 #include <algorithm>
 #include <iostream>
 #include <queue>

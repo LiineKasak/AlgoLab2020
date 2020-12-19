@@ -1,3 +1,9 @@
+/*
+Finding the min circle containing all points using CGAL min_circle_2.
+Tip: Don't use kernel with sqrt. When rounding up,
+compare FT(sqrt_val)*FT(sqrt_val) with the FT value of squared radius.
+*/
+
 #include <CGAL/Exact_predicates_exact_constructions_kernel.h>
 #include <CGAL/Min_circle_2.h>
 #include <CGAL/Min_circle_2_traits_2.h>

@@ -1,3 +1,8 @@
+/*
+Finding the sum of dominoes until a dominoe's height
+does not reach the next dominoe.
+*/
+
 #include <iostream>
 #include <vector>
 

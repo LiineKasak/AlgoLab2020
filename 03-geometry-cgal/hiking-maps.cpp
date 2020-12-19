@@ -1,3 +1,12 @@
+/*
+Finding shortest length of sequential triangles covering the path,
+such that one segment of the path is in one triangle.
+Sliding window over triangles.
+
+Tip: Try to use epic for speed -> cannot construct triangles.
+Use right() to find orientation of one point to another 2.
+*/
+
 #include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
 
 #include <cassert>

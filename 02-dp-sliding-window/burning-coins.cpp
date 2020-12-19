@@ -1,3 +1,7 @@
+/*
+DP to find the maximum possible sum of chosen coins in a 2 player game.
+*/
+
 #include <iostream>
 #include <vector>
 

@@ -1,3 +1,8 @@
+/*
+Sliding window over possible coordinates
+to find the most parasols within 100m range.
+*/
+
 #include <algorithm>
 #include <iostream>
 #include <vector>

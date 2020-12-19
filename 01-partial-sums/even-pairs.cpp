@@ -1,3 +1,8 @@
+/*
+Calculate number of even and odd sequences from 0...n,
+then calculate number of even combinations for all pairs of i...j.
+*/
+
 #include <iostream>
 
 using namespace std;

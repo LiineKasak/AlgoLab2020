@@ -1,3 +1,7 @@
+/*
+DP to build the results of a two player game with minmax algorithm.
+*/
+
 #include <algorithm>
 #include <iostream>
 #include <vector>
