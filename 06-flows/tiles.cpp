@@ -2,7 +2,6 @@
 Find if it's possible to cover a floor with 2:1 tiles.
 
 General maximum matching problem - can use Edmonds Maximum Cardinality Matching.
-
 */
 
 #include <boost/graph/adjacency_list.hpp>
