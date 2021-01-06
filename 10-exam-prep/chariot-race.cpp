@@ -10,6 +10,11 @@ of the node to be repaired. We calculate the cost for each child of the node if
 it was repaired and if not and for the repaired child we choose the child with
 the minimum repaired_cost - not_repaired_cost. For the other childs, we simply
 choose either which is lesser.
+
+Notes:
+- 2 memos if faster than array<__, 2> memo
+- not included can cost more than included, but the added best_diff should
+always be nonnegative
 */
 
 #include <algorithm>
