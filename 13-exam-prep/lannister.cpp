@@ -1,3 +1,26 @@
+/*
+This problem has 3 subproblems:
+
+1) is linear separation feasible
+
+2) is the sum of distances from point to line under a constant
+The ditance to the line ax + by + c = 0 given a point (x0, y0) is
+|ax0 + by0 + c|
+We also know which points are under and over the line.
+Points over the line will have a negative value.
+sum(axi + byi + c) forall i over + sum(-axi - byi - c) forall i under =>
+a*sum(s*xi) + b*sum(s*yi) + s*c forall i, where s = -1 if i over line else 1 
+
+3) Minimizing the maximal distance to the perpendicular line.
+The perpendicular line is:
+-bx + ay + c2 = 0
+Since we do not know which side of the perpendicular line the point is
+we have two equations for point (x0, y0):
+(-bx0 + ay0 + c2) - D <= 0
+(-bx0 + ay0 + c2) + D >= 0
+We minimize the value of D.
+*/
+
 #include <CGAL/Gmpz.h>
 #include <CGAL/QP_functions.h>
 #include <CGAL/QP_models.h>
@@ -81,8 +104,8 @@ string solve() {
     lp.set_b(i++, s);
 
     sol = CGAL::solve_linear_program(lp, ET());
+    if (sol.is_infeasible()) return "Bankrupt!";
   }
-  if (sol.is_infeasible()) return "Bankrupt!";
 
 
   // STEP 3: minimize max length to canal
