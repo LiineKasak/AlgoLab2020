@@ -40,8 +40,7 @@ void solve() {
   }
 
   int low = max((int)ceil(m / n), 1), high = m, mid;
-  while (true) {
-    if (low == high) break;
+  while (low != high) {
     mid = (high + low) / 2;
     bool success = try_max_boxes(mid, max_weight, box_weight);
     if (success)
